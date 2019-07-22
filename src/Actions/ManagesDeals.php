@@ -11,6 +11,7 @@ trait ManagesDeals
      */
     public function deals()
     {
+	//
         return $this->transformCollection(
             $this->get('deals'),
             Deal::class,
