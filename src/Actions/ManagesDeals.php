@@ -1,6 +1,6 @@
 <?php
 
-namespace TestMonitor\ActiveCampaign\Actions
+namespace TestMonitor\ActiveCampaign\Actions;
 
 trait ManagesDeals
 {
