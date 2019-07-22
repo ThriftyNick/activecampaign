@@ -2,6 +2,8 @@
 
 namespace TestMonitor\ActiveCampaign\Actions;
 
+use TestMonitor\ActiveCampaign\Resources\Deal;
+
 trait ManagesDeals
 {
     /**
