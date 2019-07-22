@@ -13,6 +13,7 @@ composer.lock
 .phpstorm.meta.php
 .ide_helper.php
 .ide_helper_models.php
+*.swp
 
 # Code Styling / Linting
 .php_cs.cache
