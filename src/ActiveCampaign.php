@@ -21,7 +21,7 @@ class ActiveCampaign
         ManagesContactTags,
         ManagesContactAutomations,
         ManagesCustomFields,
-	ManagesOrganizations
+	ManagesOrganizations,
 	ManagesDeals;
 
     /**
