@@ -14,6 +14,8 @@ composer.lock
 .ide_helper.php
 .ide_helper_models.php
 *.swp
+*.swo
+*.swn
 
 # Code Styling / Linting
 .php_cs.cache

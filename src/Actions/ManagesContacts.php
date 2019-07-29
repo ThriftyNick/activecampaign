@@ -18,7 +18,7 @@ trait ManagesContacts
     public function contacts()
     {
         return $this->transformCollection(
-            $this->get('contacts'),
+            $this->get('contacts', ['query' => ['include' => 'fieldValues']]),
             Contact::class,
             'contacts'
         );

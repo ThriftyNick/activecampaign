@@ -2,10 +2,10 @@
 
 namespace TestMonitor\ActiveCampaign\Resources;
 
-class CustomField extends Resource
+class Stage extends Resource
 {
     /**
-     * The id of the custom field.
+     * The id of the stage.
      *
      * @var int
      */
@@ -15,9 +15,4 @@ class CustomField extends Resource
      * @var string
      */
     public $title;
-
-    /**
-     * @var string
-     */
-    public $fieldLabel;
 }
