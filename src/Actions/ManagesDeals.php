@@ -37,7 +37,8 @@ trait ManagesDeals
             'deals'
         );
 
-        return array_shift($deals);
+        //return array_shift($deals);
+	return $deals;
     }
 
     /**
