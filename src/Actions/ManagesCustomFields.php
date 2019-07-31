@@ -142,7 +142,25 @@ trait ManagesCustomFields
         return array_shift($deals);
     }
 
-    public function getCustomDealFieldValues($dealId) {
+    public function bulkAddCustomFieldsToDeal(array $data)
+    {
+	/*$deals = $this->transformCollection(
+		$this->post('dealCustomFieldData/bulkCreate', ['json' => $data]),
+		Deal::class
+	);
+
+	return array_shift($deals);*/
+
+	return $this->post('dealCustomFieldData/bulkCreate', ['json' => $data]);
+    }
+
+    public function bulkUpdateCustomFieldsToDeal(array $data)
+    {
+	    return $this->patch('dealCustomFieldData/bulkUpdate', ['json' => $data]);
+    }
+
+    public function getCustomDealFieldValues($dealId)
+    {
 	    $value = $this->transformCollection(
 		    $this->get('dealCustomFieldData', ['query' => ['filters[dealId]' => $dealId]]),
 		    CustomField::class,
