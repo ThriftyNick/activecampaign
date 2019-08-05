@@ -35,6 +35,10 @@ trait ManagesTags
             'tags'
         );
 
+	$tags = array_filter($tags, function($e){
+		return $e->tagType == "contact";
+	});
+
         return array_shift($tags);
     }
 
